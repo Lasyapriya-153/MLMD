@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.compose import ColumnTransformer
-from sklearn. datasets import make_classification
-from sklearn.imputer i,mport SimpleImputer
+from sklearn.datasets import make_classification
+from sklearn.imputer import SimpleImputer
 fromn sklearn.pipeline import Pipeline
 from sklearn.preprocessing import train_test_split , StandardScaler
 def create_pipeline:
