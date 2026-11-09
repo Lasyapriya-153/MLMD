@@ -1,4 +1,4 @@
-name: Automated ML Pipeline
+name: Automated ML Pipeline 
 on:
   push:
     branches: ["main"]
