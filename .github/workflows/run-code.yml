@@ -1,7 +1,10 @@
 name: Run Python Script Pipeline
-on: [push]
+on:
+  push:
+    branches: ["main"]
+    
 jobs:
-    run-script:
+    run-preprocessing:
        runs-on: ubuntu-latest
        steps:
           - name: Checkout Repository Code
