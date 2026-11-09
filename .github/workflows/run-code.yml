@@ -1,4 +1,4 @@
-name: Run Python Script Pipeline
+name: Automated ML Pipeline
 on:
   push:
     branches: ["main"]
