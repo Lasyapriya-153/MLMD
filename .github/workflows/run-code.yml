@@ -2,6 +2,8 @@ name: Automated ML Pipeline
 on:
   push:
     branches: ["main"]
+  pull_request: 
+     branches: ["main"]
     
 jobs:
     run-preprocessing:
@@ -15,7 +17,7 @@ jobs:
             with:
                python-version: '3.10'
           - name: install Dependencies
-            run: pythom -m install --upgrade pip
+            run: python -m install --upgrade pip
                  pip install pandas scikit-learn pytest
           - name: Execute Script
             run: python Example.py
