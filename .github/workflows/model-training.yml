@@ -16,6 +16,18 @@ jobs:
       - name: Checkout Repository Code
         uses: actions/checkout@v4
 
+      - name: Check Repository Files
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "Files in repository root:"
+          ls -la
+          echo "Searching for test_model.py:"
+          find . -name "test_model.py"
+
+      - name: Checkout Repository Code
+        uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
